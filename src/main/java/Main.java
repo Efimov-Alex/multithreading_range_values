@@ -54,14 +54,6 @@ public class Main {
 
         System.out.println("Time: " + (endTs - startTs) + "ms");
 
-        /*
-        long startTs = System.currentTimeMillis(); // start time
-
-        long endTs = System.currentTimeMillis(); // end time
-
-        System.out.println("Time: " + (endTs - startTs) + "ms");
-
-         */
     }
 
     public static String generateText(String letters, int length) {
