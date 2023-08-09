@@ -46,6 +46,13 @@ public class Main {
         }
 
 
+        long startTs = System.currentTimeMillis(); // start time
+        for (Thread thread : threads) {
+            thread.join(); // зависаем, ждём когда поток объект которого лежит в thread завершится
+        }
+        long endTs = System.currentTimeMillis(); // end time
+
+        System.out.println("Time: " + (endTs - startTs) + "ms");
 
         /*
         long startTs = System.currentTimeMillis(); // start time
